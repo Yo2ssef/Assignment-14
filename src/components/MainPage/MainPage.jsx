@@ -1,0 +1,15 @@
+import { Outlet } from "react-router";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
+export default function MainPAge() {
+  return (
+    <>
+      <Navbar />
+      <>
+        <Outlet />
+      </>
+      <Footer/>
+    </>
+  );
+}
