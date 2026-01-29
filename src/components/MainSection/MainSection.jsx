@@ -28,7 +28,10 @@ export default function MainSection() {
             التصوير.
           </p>
           <div className="d-flex  gap-2">
-            <Link to='/ExploreArticles' className=" text-decoration-none colorBtn text-white px-4 py-3 rounded-5 fw-bold btnQra">
+            <Link
+              to="/ExploreArticles"
+              className=" text-decoration-none colorBtn text-white px-4 py-3 rounded-5 fw-bold btnQra"
+            >
               استكشف المقالات{" "}
               <span>
                 <i className="fa-solid fa-arrow-left"></i>
@@ -105,7 +108,10 @@ export default function MainSection() {
             <span className="text-white-50 fs-5">
               محتوى منتقى لبدء رحلة تعلمك
             </span>
-            <Link to='/ExploreArticles' className=" text-decoration-none colorBtn text-white px-4 py-3 rounded-4 fw-bold btnQra">
+            <Link
+              to="/ExploreArticles"
+              className=" text-decoration-none colorBtn text-white px-4 py-3 rounded-4 fw-bold btnQra"
+            >
               عرض الكل{" "}
               <span>
                 <i className="fa-solid fa-chevron-left"></i>
@@ -241,32 +247,34 @@ export default function MainSection() {
               احصل على نصائح التصوير الحصرية ودروس جديدة مباشرة في بريدك
               الإلكتروني
             </p>
-            <div className="col-12 d-flex gap-2 align-items-center justify-content-center">
+            <div class="col-12 d-flex flex-column flex-lg-row gap-2 align-items-center justify-content-center">
               <input
-                className="rounded-4 pe-4 inputNewsLetter col-5 py-3"
+                className="rounded-4 pe-4 inputNewsLetter col-10 col-lg-5 py-3"
                 type="email"
                 placeholder="أدخل بريدك الإلكتروني"
               />
-              <button className="border-0 py-3 px-4 rounded-3 btnNewsLetter text-white fw-bold">
+              <button className="border-0 py-3 px-4 rounded-3 btnNewsLetter text-white fw-bold col-10 col-lg-auto">
                 اشترك الان
               </button>
             </div>
-            <div className="p-4 d-flex gap-2">
-              <img
-                className="rounded-circle"
-                style={{ width: "30px", height: "30px" }}
-                src={allData[0].author.avatar}
-              />
-              <img
-                className="rounded-circle"
-                style={{ width: "30px", height: "30px" }}
-                src={allData[2].author.avatar}
-              />
-              <img
-                className="rounded-circle"
-                style={{ width: "30px", height: "30px" }}
-                src={allData[3].author.avatar}
-              />
+            <div class="p-4 d-flex flex-column flex-lg-row gap-2">
+              <div className="d-flex gap-2">
+                <img
+                  className="rounded-circle"
+                  style={{ width: "30px", height: "30px" }}
+                  src={allData[0].author.avatar}
+                />
+                <img
+                  className="rounded-circle"
+                  style={{ width: "30px", height: "30px" }}
+                  src={allData[2].author.avatar}
+                />
+                <img
+                  className="rounded-circle"
+                  style={{ width: "30px", height: "30px" }}
+                  src={allData[3].author.avatar}
+                />
+              </div>
               <span className="text-white-50">
                 انضم ل<span className="text-white">+10,000 </span>
                 مصور
